@@ -9,11 +9,12 @@ public class PostersManagerTest {
         manager.addPoster("Poster2");
         manager.addPoster("Poster3");
 
-        String [] expected = {"Poster1", "Poster2", "Poster3"};
-        String [] actual = manager.findAll();
+        String[] expected = {"Poster1", "Poster2", "Poster3"};
+        String[] actual = manager.findAll();
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void last() {
         PostersManager manager = new PostersManager();
